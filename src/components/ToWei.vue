@@ -5,7 +5,7 @@
     <p class="description">Converts any ether value value into wei.</p>
     <div>
       <label for="number">number - String|Number|BN: The value.</label><br>
-      <input id="number" v-model="number" placeholder="number"><br><br>
+      <input id="number" v-model="number" type="number" placeholder="number"><br><br>
       <label for="number">unit - String (optional, defaults to "ether"): The ether to convert from.</label><br>
       <input id="unit" v-model="unit" placeholder="unit (default: ether)">
       <br>
