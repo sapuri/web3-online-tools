@@ -9,16 +9,19 @@
     <p><a href="https://github.com/sapuri/web3-online-tools" target="_blank" rel="noopener">GitHub repository</a></p>
 
     <ToChecksumAddress/>
+    <CheckAddressChecksum/>
   </div>
 </template>
 
 <script>
   import ToChecksumAddress from './ToChecksumAddress.vue'
+  import CheckAddressChecksum from './CheckAddressChecksum.vue'
 
   export default {
     name: 'home',
     components: {
-      ToChecksumAddress
+      ToChecksumAddress,
+      CheckAddressChecksum
     }
   }
 </script>
