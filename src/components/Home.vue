@@ -8,9 +8,22 @@
     </p>
     <p><a href="https://github.com/sapuri/web3-online-tools" target="_blank" rel="noopener">GitHub repository</a></p>
 
-    <IsAddress/>
-    <ToChecksumAddress/>
-    <CheckAddressChecksum/>
+    <hr>
+    <div class="function">
+      <IsAddress/>
+    </div>
+    <hr>
+    <div class="function">
+      <ToChecksumAddress/>
+    </div>
+    <hr>
+    <div class="function">
+      <CheckAddressChecksum/>
+    </div>
+    <hr>
+    <div class="function">
+      <ToWei/>
+    </div>
   </div>
 </template>
 
@@ -18,19 +31,29 @@
   import IsAddress from "./IsAddress";
   import ToChecksumAddress from './ToChecksumAddress.vue'
   import CheckAddressChecksum from './CheckAddressChecksum.vue'
+  import ToWei from "./ToWei";
 
   export default {
     name: 'home',
     components: {
       IsAddress,
       ToChecksumAddress,
-      CheckAddressChecksum
+      CheckAddressChecksum,
+      ToWei
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+  .function {
+    padding: 20px;
+  }
+
+  .description {
+    font-weight: bold;
+  }
+
   .result {
     color: green;
   }
