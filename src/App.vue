@@ -22,11 +22,11 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    margin: 60px 0;
   }
 
   h3 {
-    margin: 40px 0 0;
+    margin-top: 0;
   }
 
   a {

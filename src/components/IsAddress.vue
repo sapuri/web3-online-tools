@@ -2,10 +2,11 @@
   <div id="is-address">
     <h3>isAddress</h3>
     <pre>web3.utils.isAddress(address)</pre>
-    <p>Checks if a given string is a valid Ethereum address. It will also check the checksum, if the address has upper
+    <p class="description">Checks if a given string is a valid Ethereum address. It will also check the checksum, if the address has upper
       and lowercase letters.</p>
     <div>
-      <input v-model="address" placeholder="address">
+      <label for="address">address - String: An address string.</label><br>
+      <input id="address" v-model="address" placeholder="address">
       <br>
       <button v-on:click="run">Run</button>
       <p v-if="result" class="result">Result: {{ result }}</p>

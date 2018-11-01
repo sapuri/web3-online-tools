@@ -2,9 +2,10 @@
   <div id="to-checksum-address">
     <h3>toChecksumAddress</h3>
     <pre>web3.utils.toChecksumAddress(address)</pre>
-    <p>Will convert an upper or lowercase Ethereum address to a checksum address.</p>
+    <p class="description">Will convert an upper or lowercase Ethereum address to a checksum address.</p>
     <div>
-      <input v-model="address" placeholder="address">
+      <label for="address">address - String: An address string.</label><br>
+      <input id="address" v-model="address" placeholder="address">
       <br>
       <button v-on:click="run">Run</button>
       <p v-if="result" class="result">Result: {{ result }}</p>

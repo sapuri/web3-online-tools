@@ -2,9 +2,10 @@
   <div id="check-address-checksum">
     <h3>checkAddressChecksum</h3>
     <pre>web3.utils.checkAddressChecksum(address)</pre>
-    <p>Checks the checksum of a given address. Will also return false on non-checksum addresses.</p>
+    <p class="description">Checks the checksum of a given address. Will also return false on non-checksum addresses.</p>
     <div>
-      <input v-model="address" placeholder="address">
+      <label for="address">address - String: An address string.</label><br>
+      <input id="address" v-model="address" placeholder="address">
       <br>
       <button v-on:click="run">Run</button>
       <p v-if="result" class="result">Result: {{ result }}</p>
