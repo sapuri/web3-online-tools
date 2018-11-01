@@ -1,12 +1,13 @@
 <template>
   <div id="to-checksum-address">
-    <h3>Convert to Checksum Address</h3>
-    <p>web3.utils.toChecksumAddress([address])</p>
+    <h3>toChecksumAddress</h3>
+    <pre>web3.utils.toChecksumAddress(address)</pre>
+    <p>Will convert an upper or lowercase Ethereum address to a checksum address.</p>
     <div>
-      <input v-model="address" placeholder="0x...">
+      <input v-model="address" placeholder="address">
       <br>
       <button v-on:click="run">Run</button>
-      <p v-if="checksumAddress" class="result">Checksum Address: {{ checksumAddress }}</p>
+      <p v-if="result" class="result">Result: {{ result }}</p>
       <p v-if="errorMsg" class="error-msg">{{ errorMsg }}</p>
     </div>
   </div>
@@ -20,16 +21,16 @@
     data() {
       return {
         address: '',
-        checksumAddress: '',
+        result: '',
         errorMsg: ''
       }
     },
     methods: {
       run: function () {
-        this.checksumAddress = '';
+        this.result = '';
         this.errorMsg = '';
         try {
-          this.checksumAddress = web3.utils.toChecksumAddress(this.address);
+          this.result = web3.utils.toChecksumAddress(this.address);
         } catch (e) {
           this.errorMsg = e.toString();
         }
