@@ -8,18 +8,21 @@
     </p>
     <p><a href="https://github.com/sapuri/web3-online-tools" target="_blank" rel="noopener">GitHub repository</a></p>
 
+    <IsAddress/>
     <ToChecksumAddress/>
     <CheckAddressChecksum/>
   </div>
 </template>
 
 <script>
+  import IsAddress from "./IsAddress";
   import ToChecksumAddress from './ToChecksumAddress.vue'
   import CheckAddressChecksum from './CheckAddressChecksum.vue'
 
   export default {
     name: 'home',
     components: {
+      IsAddress,
       ToChecksumAddress,
       CheckAddressChecksum
     }
