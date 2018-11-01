@@ -24,4 +24,13 @@
     color: #2c3e50;
     margin-top: 60px;
   }
+
+  h3 {
+    margin: 40px 0 0;
+  }
+
+  a {
+    color: #2980B9;
+    text-decoration: none;
+  }
 </style>
