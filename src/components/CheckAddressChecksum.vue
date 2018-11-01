@@ -30,7 +30,7 @@
         this.result = '';
         this.errorMsg = '';
         try {
-          this.result = web3.utils.checkAddressChecksum(this.address);
+          this.result = web3.utils.checkAddressChecksum(this.address).toString();
         } catch (e) {
           this.errorMsg = e.toString();
         }
