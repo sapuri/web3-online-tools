@@ -1,23 +1,43 @@
 <template>
   <div id="to-wei">
-    <h3>toWei</h3>
-    <pre>web3.utils.toWei(number [, unit])</pre>
-    <p class="description">Converts any ether value value into wei.</p>
-    <div>
-      <label for="number">number - String|Number|BN: The value.</label><br>
-      <input id="number" v-model="number" type="number" placeholder="number"><br><br>
-      <label for="number">unit - String (optional, defaults to "ether"): The ether to convert from.</label><br>
-      <input id="unit" v-model="unit" placeholder="unit (default: ether)">
-      <br>
-      <button v-on:click="run">Run</button>
-      <p v-if="result" class="result">Result: {{ result }}</p>
-      <p v-if="errorMsg" class="error-msg">{{ errorMsg }}</p>
-    </div>
+    <md-card>
+      <md-card-header>
+        <div class="md-title">toWei</div>
+      </md-card-header>
+
+      <md-card-content>
+        <pre>web3.utils.toWei(number [, unit])</pre>
+        <p class="description">Converts any ether value value into wei.</p>
+        <div>
+          <md-field>
+            <label>number</label>
+            <md-input v-model="number" type="number"></md-input>
+            <span class="md-helper-text">String|Number|BN: The value.</span>
+          </md-field>
+          <md-field>
+            <label>unit</label>
+            <md-input v-model="unit"></md-input>
+            <span class="md-helper-text">String (optional, defaults to "ether"): The ether to convert from.</span>
+          </md-field>
+          <p v-if="result" class="result">Result: {{ result }}</p>
+          <p v-if="errorMsg" class="error-msg">{{ errorMsg }}</p>
+        </div>
+      </md-card-content>
+
+      <md-card-actions>
+        <md-button v-on:click="run">Run</md-button>
+      </md-card-actions>
+    </md-card>
   </div>
 </template>
 
 <script>
+  import Vue from 'vue'
+  import {MdCard, MdField} from 'vue-material/dist/components';
   import * as web3 from "web3";
+
+  Vue.use(MdCard);
+  Vue.use(MdField);
 
   export default {
     name: 'to-wei',

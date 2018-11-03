@@ -21,16 +21,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
-    margin: 60px 0;
-  }
-
-  h3 {
-    margin-top: 0;
-  }
-
-  a {
-    color: #2980B9;
-    text-decoration: none;
+    margin-bottom: 60px;
   }
 </style>
