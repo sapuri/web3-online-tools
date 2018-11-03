@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.5.17",
+    "vue-material": "^1.0.0-beta-10.2",
     "web3": "^1.0.0-beta.36"
   },
   "devDependencies": {
