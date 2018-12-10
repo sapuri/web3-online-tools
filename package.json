@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.17",
+    "vue": "^2.5.20",
     "vue-material": "^1.0.0-beta-10.2",
     "web3": "^1.0.0-beta.36"
   },
@@ -19,7 +19,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.20"
   },
   "eslintConfig": {
     "root": true,
