@@ -10,7 +10,7 @@
   "dependencies": {
     "vue": "^2.5.20",
     "vue-material": "^1.0.0-beta-10.2",
-    "web3": "^1.0.0-beta.36"
+    "web3": "^1.2.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
